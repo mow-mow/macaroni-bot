@@ -1,0 +1,2 @@
+今日のおすすめパスタは[# th:utext="${pasta.pastaName}" /]だ！
+[# th:utext="${pasta.comment}" /]
