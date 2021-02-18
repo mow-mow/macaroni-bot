@@ -1,4 +1,4 @@
-package info.caprese.macaronibot.controller;
+package info.caprese.macaronibot.service;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

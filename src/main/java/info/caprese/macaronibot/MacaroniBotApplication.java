@@ -6,6 +6,8 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
+import twitter4j.Twitter;
+import twitter4j.TwitterFactory;
 
 
 @SpringBootApplication
@@ -22,4 +24,8 @@ public class MacaroniBotApplication {
 		return restTemplateBuilder.build();
 	}
 
+	@Bean
+	private Twitter twitter() {
+		return new TwitterFactory().getInstance();
+	}
 }
