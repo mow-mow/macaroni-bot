@@ -2,7 +2,7 @@ server:
   port: 8081
 
 scheduler:
-  cron: "0 0 * * * *"
+  cron: "0 * * * * *"
 spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
