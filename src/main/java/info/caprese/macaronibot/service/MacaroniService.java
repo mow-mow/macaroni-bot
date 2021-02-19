@@ -2,6 +2,7 @@ package info.caprese.macaronibot.service;
 
 import info.caprese.macaronibot.logic.ChiyomiLogic;
 import info.caprese.macaronibot.logic.MacaroniLogic;
+import info.caprese.macaronibot.logic.PastaRenponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

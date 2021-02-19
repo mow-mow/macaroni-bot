@@ -1,6 +1,5 @@
 package info.caprese.macaronibot.logic;
 
-import info.caprese.macaronibot.service.PastaRenponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
