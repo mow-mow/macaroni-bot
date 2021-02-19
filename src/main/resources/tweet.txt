@@ -1,2 +1,3 @@
-今日のおすすめパスタは[# th:utext="${pasta.pastaName}" /]だ！
+お前ら[# th:utext="${pasta.timeZone.viewName}" /]の時間だ！
+おすすめパスタは[# th:utext="${pasta.pastaName}" /]だ！
 [# th:utext="${pasta.comment}" /]
