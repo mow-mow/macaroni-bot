@@ -25,7 +25,7 @@ public class MacaroniBotApplication {
 	}
 
 	@Bean
-	private Twitter twitter() {
+	public Twitter twitter() {
 		return new TwitterFactory().getInstance();
 	}
 }
