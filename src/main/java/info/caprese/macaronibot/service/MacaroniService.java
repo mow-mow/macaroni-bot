@@ -4,6 +4,7 @@ import info.caprese.macaronibot.logic.ChiyomiLogic;
 import info.caprese.macaronibot.logic.MacaroniLogic;
 import info.caprese.macaronibot.logic.PastaRenponse;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.context.Context;
@@ -26,7 +27,12 @@ public class MacaroniService {
 
         String text = generateTweetMessage(pasta);
 
-        chiyomiLogic.tweet(text);
+
+        if (pasta.getImage() == null) {
+            chiyomiLogic.tweet(text);
+        } else {
+            chiyomiLogic.tweet(text, Base64.decodeBase64(pasta.getImage()));
+        }
     }
 
     private String generateTweetMessage(PastaRenponse pasta) {
