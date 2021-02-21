@@ -18,5 +18,8 @@ public class PastaRenponse {
     private String pastaName;
     private String description;
     private String comment;
+    private String image;
     private String errorMsg;
+
+
 }
