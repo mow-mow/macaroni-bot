@@ -4,7 +4,17 @@ server:
 scheduler:
   cron: "0 * * * * *"
 spring:
+  application:
+    name: macaroni-bot
   jackson:
     property-naming-strategy: SNAKE_CASE
 app:
   macaroni-url: "http://localhost:8080/v2/pasta/"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  metrics:
+    tags:
+      application: ${spring.application.name}

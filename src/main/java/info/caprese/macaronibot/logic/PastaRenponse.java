@@ -1,11 +1,10 @@
 package info.caprese.macaronibot.logic;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import info.caprese.macaronibot.model.TimeZone;
-import lombok.*;
+import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
